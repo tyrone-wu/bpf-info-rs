@@ -1,0 +1,9 @@
+[workspace]
+members = ["bpf-metrics", "bpf-metrics-statsd"]
+resolver = "2"
+
+[workspace.package]
+license = "Apache-2.0"
+edition = "2021"
+
+[workspace.dependencies]
