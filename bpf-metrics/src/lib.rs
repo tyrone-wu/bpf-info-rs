@@ -1,14 +1,15 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+#![deny(dead_code)]
+#![deny(missing_docs)]
+#![deny(unused)]
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+//! Collects and publishes eBPF metadata for programs, maps, and links on the host system, exposing
+//! metrics using the OpenMetrics exposition format.
+//!
+//! ```no_run
+//! todo!()
+//! ```
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+mod bpf_stats;
+
+#[cfg(feature = "bpf-stats")]
+pub use bpf_stats::*;
