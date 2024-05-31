@@ -9,7 +9,9 @@ edition.workspace = true
 anyhow = "1.0.86"
 aya = { git = "https://github.com/tyrone-wu/aya.git", branch = "dev" }
 aya-obj = { git = "https://github.com/tyrone-wu/aya.git", branch = "dev" }
+prometheus-client = "0.22.2"
 
 [features]
-default = [ "bpf-stats"]
+default = ["metrics", "bpf-stats"]
 bpf-stats = []
+metrics = []
