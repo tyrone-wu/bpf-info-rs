@@ -1,5 +1,5 @@
 [workspace]
-members = ["bpf-metrics", "bpf-metrics-statsd"]
+members = ["bpf-metrics"]
 resolver = "2"
 
 [workspace.package]

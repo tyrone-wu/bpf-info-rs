@@ -6,7 +6,7 @@
 //! metrics using the OpenMetrics exposition format.
 //!
 //! ```no_run
-//! use bpf_metrics::{BpfMetrics, MapMetric, ProgMetric};
+//! use bpf_info::{BpfMetrics, MapMetric, ProgMetric};
 //!
 //! // Init registry
 //! let mut bpf_metrics = BpfMetrics::new();

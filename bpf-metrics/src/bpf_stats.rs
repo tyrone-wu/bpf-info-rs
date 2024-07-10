@@ -1,7 +1,7 @@
 //! This modules provides functionalities for managing bpf stats.
 //!
 //! ```no_run
-//! use bpf_metrics::{
+//! use bpf_info::{
 //!     disable_stats_procfs, enable_stats_fd, enable_stats_procfs, is_stats_enabled_procfs,
 //! };
 //!
@@ -56,7 +56,7 @@ const PROCFS_BPF_STATS_ENABLED: &str = "/proc/sys/kernel/bpf_stats_enabled";
 /// # Example
 ///
 /// ```no_run
-/// use bpf_metrics::enable_stats_fd;
+/// use bpf_info::enable_stats_fd;
 ///
 /// let fd_opt = enable_stats_fd()?;
 ///
@@ -85,7 +85,7 @@ pub fn enable_stats_fd() -> Result<Option<OwnedFd>, anyhow::Error> {
 /// # Example
 ///
 /// ```no_run
-/// use bpf_metrics::{enable_stats_procfs, is_stats_enabled_procfs};
+/// use bpf_info::{enable_stats_procfs, is_stats_enabled_procfs};
 ///
 /// enable_stats_procfs()?;
 ///
@@ -111,8 +111,8 @@ pub fn enable_stats_procfs() -> Result<(), anyhow::Error> {
 /// # Example
 ///
 /// ```no_run
-/// use bpf_metrics::{disable_stats_procfs, is_stats_enabled_procfs};
-/// # use bpf_metrics::enable_stats_procfs;
+/// use bpf_info::{disable_stats_procfs, is_stats_enabled_procfs};
+/// # use bpf_info::enable_stats_procfs;
 ///
 /// # enable_stats_procfs()?;
 /// # let enabled = is_stats_enabled_procfs()?;
@@ -137,7 +137,7 @@ pub fn disable_stats_procfs() -> Result<(), anyhow::Error> {
 /// # Example
 ///
 /// ```no_run
-/// use bpf_metrics::{enable_stats_procfs, is_stats_enabled_procfs};
+/// use bpf_info::{enable_stats_procfs, is_stats_enabled_procfs};
 ///
 /// enable_stats_procfs()?;
 ///

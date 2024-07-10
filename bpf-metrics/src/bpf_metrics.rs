@@ -30,8 +30,8 @@ impl BpfMetrics {
     /// # Example
     ///
     /// ```no_run
-    /// use bpf_metrics::BpfMetrics;
-    /// # use bpf_metrics::ProgMetric;
+    /// use bpf_info::BpfMetrics;
+    /// # use bpf_info::ProgMetric;
     ///
     /// let mut bpf_metrics = BpfMetrics::new();
     /// # bpf_metrics.register_prog_metrics([ProgMetric::Uptime].iter());
@@ -49,8 +49,8 @@ impl BpfMetrics {
     /// # Example
     ///
     /// ```no_run
-    /// use bpf_metrics::BpfMetrics;
-    /// # use bpf_metrics::ProgMetric;
+    /// use bpf_info::BpfMetrics;
+    /// # use bpf_info::ProgMetric;
     ///
     /// let mut bpf_metrics = BpfMetrics::new();
     /// # bpf_metrics.register_prog_metrics([ProgMetric::Uptime].iter());
@@ -73,7 +73,7 @@ impl BpfMetrics {
     /// # Example
     ///
     /// ```no_run
-    /// use bpf_metrics::{BpfMetrics, ProgMetric};
+    /// use bpf_info::{BpfMetrics, ProgMetric};
     ///
     /// let mut bpf_metrics = BpfMetrics::new();
     ///
@@ -96,7 +96,7 @@ impl BpfMetrics {
     /// # Example
     ///
     /// ```no_run
-    /// use bpf_metrics::{BpfMetrics, MapMetric};
+    /// use bpf_info::{BpfMetrics, MapMetric};
     ///
     /// let mut bpf_metrics = BpfMetrics::new();
     ///

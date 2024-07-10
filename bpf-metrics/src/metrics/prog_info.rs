@@ -15,7 +15,7 @@ use crate::metric_collection::{Collector, MetricCollection};
 /// # Example
 ///
 /// ```no_run
-/// use bpf_metrics::{BpfMetrics, ProgMetric};
+/// use bpf_info::{BpfMetrics, ProgMetric};
 ///
 /// // Init metrics registry
 /// let mut bpf_metrics = BpfMetrics::new();

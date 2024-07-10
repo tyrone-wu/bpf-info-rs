@@ -1,5 +1,5 @@
 [package]
-name = "bpf-metrics"
+name = "bpf-info"
 version = "0.1.0"
 description = "eBPF metrics emitter based on OpenMetrics standards"
 license.workspace = true

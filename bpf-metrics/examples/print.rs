@@ -3,7 +3,7 @@
 use std::{thread::sleep, time::Duration};
 
 use anyhow::Result;
-use bpf_metrics::{enable_stats_fd, BpfMetrics, MapMetric, ProgMetric};
+use bpf_info::{enable_stats_fd, BpfMetrics, MapMetric, ProgMetric};
 
 fn main() -> Result<()> {
     let mut bpf_metrics = BpfMetrics::new();

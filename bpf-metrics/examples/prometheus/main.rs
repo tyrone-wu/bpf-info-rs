@@ -11,7 +11,7 @@ use std::{
 };
 
 use anyhow::Result;
-use bpf_metrics::{BpfMetrics, ProgMetric};
+use bpf_info::{BpfMetrics, ProgMetric};
 use http_body_util::{combinators, BodyExt, Full};
 use hyper::{
     body::{Bytes, Incoming},
