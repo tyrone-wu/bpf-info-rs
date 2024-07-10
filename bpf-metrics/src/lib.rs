@@ -6,7 +6,7 @@
 //! metrics using the OpenMetrics exposition format.
 //!
 //! ```no_run
-//! use bpf_info::{BpfMetrics, MapMetric, ProgMetric};
+//! use bpf_info::{BpfMetrics, LinkMetric, MapMetric, ProgMetric};
 //!
 //! // Init registry
 //! let mut bpf_metrics = BpfMetrics::new();
@@ -17,6 +17,9 @@
 //!
 //! let map_metrics = [MapMetric::MaxEntries];
 //! bpf_metrics.register_map_metrics(map_metrics.iter());
+//!
+//! let link_metrics = [];
+//! bpf_metrics.register_link_metrics(link_metrics.iter());
 //!
 //! // Collect bpf metrics from the host
 //! bpf_metrics.collect_metrics();
@@ -35,6 +38,8 @@ mod metrics;
 pub use bpf_metrics::BpfMetrics;
 #[cfg(feature = "bpf-stats")]
 pub use bpf_stats::*;
+#[cfg(feature = "metrics")]
+pub use metrics::link_info::LinkMetric;
 #[cfg(feature = "metrics")]
 pub use metrics::map_info::MapMetric;
 #[cfg(feature = "metrics")]
